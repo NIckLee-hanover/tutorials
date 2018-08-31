@@ -17,7 +17,7 @@ ellipse = EllipseAsset(25, 25, thinline, blue)
 # display the shapes
 Sprite(rectangle, (0,0))
 Sprite(rectangle, (25,25))
-Sprite(ellipse, (50,50))
+Sprite(ellipse, (100,100))
 
 myapp = App()
 myapp.run()
