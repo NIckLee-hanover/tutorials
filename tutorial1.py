@@ -9,13 +9,15 @@ black = Color(0x000000, 1.0)
 white = Color(0xffffff, 1.0)
 
 # 1 Pixel wide line
-thinline = LineStyle(1, white)
+thinline = LineStyle(1, black)
 # rectangle
 rectangle = RectangleAsset(50, 50, thinline, blue)
+ellipse = EllipseAsset(50, 50, thinline, blue
 
-# display a rectangle
+# display the shapes
 Sprite(rectangle, (0,0))
 Sprite(rectangle, (25,25))
+Sprite(ellipse, (50,50))
 
 myapp = App()
 myapp.run()
