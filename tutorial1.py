@@ -10,10 +10,10 @@ black = Color(0x000000, 1.0)
 # 1 Pixel wide line
 thinline = LineStyle(1, black)
 # rectangle
-rectangle = RectangleAsset(50, 50, 100, 100 thinline, blue)
+rectangle = RectangleAsset(50, 50, thinline, blue)
 
 # display a rectangle
-Sprite(rectangle)
+Sprite(rectangle, (100,100))
 
 myapp = App()
 myapp.run()
