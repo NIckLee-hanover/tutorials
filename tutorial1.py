@@ -12,7 +12,7 @@ white = Color(0xffffff, 1.0)
 thinline = LineStyle(1, black)
 # rectangle
 rectangle = RectangleAsset(50, 50, thinline, blue)
-ellipse = EllipseAsset(50, 50, thinline, blue
+ellipse = EllipseAsset(25, 25, thinline, blue)
 
 # display the shapes
 Sprite(rectangle, (0,0))
