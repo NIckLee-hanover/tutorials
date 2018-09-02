@@ -14,11 +14,11 @@ thinline = LineStyle(1, black)
 bluecircle = CircleAsset(7,thinline, blue)
 whitecircle = CircleAsset(7,thinline, white)
 redcircle = CircleAsset(7,thinline, red)
-xcoordinates = range(100, 600, 10)
+xcoordinates = [x//5 for x in range(100,1000,10)]
 
-sprites = [Sprite(redcircle, (x, x*0.5 + 100)) for x in xcoordinates]
-sprites = [Sprite(whitecircle, (x, x*0.5 + 120)) for x in xcoordinates]
-sprites = [Sprite(bluecircle, (x, x*0.5 + 140)) for x in xcoordinates]
+sprites = [Sprite(redcircle, (x*2.5, x*0.5 + 100)) for x in xcoordinates]
+sprites = [Sprite(whitecircle, (x*2.5, x*0.5 + 120)) for x in xcoordinates]
+sprites = [Sprite(bluecircle, (x*2.5, x*0.5 + 140)) for x in xcoordinates]
 
 myapp = App()
 myapp.run()
